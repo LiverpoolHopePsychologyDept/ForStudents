@@ -187,7 +187,7 @@ https://templatemo.com/tm-516-known
   .section-btn {
     background: transparent;
     border-radius: 50px;
-    border: 4px solid #ffffff;
+    border: 5px solid #ffffff;
     color: #ffffff;
     font-size: inherit;
     font-weight: bold;
@@ -239,7 +239,7 @@ https://templatemo.com/tm-516-known
     border-radius: 50%;
     border: 1px solid #575757;
     border-top-color: #ffffff;
-    animation: spinner .9s linear infinite;
+    animation: spinner 2.3s linear infinite;
   }
 
   @-webkit-@keyframes spinner {
@@ -427,16 +427,16 @@ https://templatemo.com/tm-516-known
 
 
   /*---------------------------------------
-      YOUSAID             
+      REPS            
   -----------------------------------------*/
 
-  #about figure {
+  #reps figure {
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
   }
 
-  #about figure span {
+  #reps figure span {
     float: left;
     margin-left: -15px;
     padding: 15px 20px;
@@ -444,7 +444,7 @@ https://templatemo.com/tm-516-known
     top: 20px;
   }
 
-  #about figure span i {
+  #reps figure span i {
     background: #8CB65D;
     border-radius: 50px;
     color: #ffffff;

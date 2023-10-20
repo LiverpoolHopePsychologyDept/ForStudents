@@ -125,7 +125,7 @@
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
-	animation-duration: 1000ms;
+	animation-duration: 2000ms;
 	animation-fill-mode: both;
 }
 
@@ -155,7 +155,7 @@
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
-	transition: height 500ms ease-in-out;
+	transition: height 2000ms ease-in-out;
 }
 
 /*
@@ -163,7 +163,7 @@
  */
 .owl-carousel .owl-item .owl-lazy {
 	opacity: 0;
-	transition: opacity 400ms ease;
+	transition: opacity 2000ms ease;
 }
 
 .owl-carousel .owl-item img.owl-lazy {
@@ -191,7 +191,7 @@
 	cursor: pointer;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
-	transition: transform 100ms ease;
+	transition: transform 2000ms ease;
 }
 
 .owl-carousel .owl-video-play-icon:hover {
@@ -210,7 +210,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	transition: opacity 400ms ease;
+	transition: opacity 2000ms ease;
 }
 
 .owl-carousel .owl-video-frame {
