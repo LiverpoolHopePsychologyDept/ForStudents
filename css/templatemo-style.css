@@ -12,7 +12,7 @@ https://templatemo.com/tm-516-known
     background: #ffffff;
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
 
@@ -28,18 +28,18 @@ https://templatemo.com/tm-516-known
 
   h1 {
     color: #252525;
-    font-size: 3em;
+    font-size: 4em;
     line-height: normal;
   }
 
   h2 {
     color: #353535;
-    font-size: 2.5em;
+    font-size: 3em;
     padding-bottom: 10px;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 0;
   }
 
@@ -50,7 +50,7 @@ https://templatemo.com/tm-516-known
 
   p {
     color: #757575;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 24px;
   }
@@ -95,7 +95,7 @@ https://templatemo.com/tm-516-known
   }
 
   .section-title {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .section-title h2 {
@@ -434,6 +434,7 @@ https://templatemo.com/tm-516-known
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
+	font-size: 16px;
   }
 
   #reps figure span {
@@ -442,6 +443,7 @@ https://templatemo.com/tm-516-known
     padding: 15px 20px;
     position: relative;
     top: 20px;
+	font-size: 16px;
   }
 
   #reps figure span i {
@@ -470,6 +472,7 @@ https://templatemo.com/tm-516-known
 
   .team-info {
     padding: 20px 30px;
+	font-size: 16px;
   }
 
   .team-image img {
