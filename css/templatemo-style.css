@@ -35,7 +35,7 @@ https://templatemo.com/tm-516-known
   h2 {
     color: #353535;
     font-size: 3em;
-    padding-bottom: 10px;
+ 
   }
 
   h3 {
@@ -47,7 +47,16 @@ https://templatemo.com/tm-516-known
   h3 a {
     color: #454545;
   }
-
+    h4 {
+    font-size: 2.0em;
+    margin-bottom: 0;
+	color: #ffffff;
+  }
+    h5 {
+    font-size: 2.0em;
+    margin-bottom: 0;
+	color: #454545;
+  }
   p {
     color: #757575;
     font-size: 16px;
@@ -159,7 +168,7 @@ https://templatemo.com/tm-516-known
 
   section {
     position: relative;
-    padding: 100px 0;
+    padding: 20px 0;
   }
 
   #team,
@@ -500,6 +509,7 @@ https://templatemo.com/tm-516-known
 
   #courses .section-title {
     text-align: center;
+	margin-top: 50px;
   }
 
   #courses .owl-theme .owl-nav {
@@ -747,7 +757,7 @@ https://templatemo.com/tm-516-known
 
   footer {
     background: #252020;
-    padding: 120px 0;
+    padding: 50px 0;
   }
 
   footer .section-title {
@@ -853,7 +863,7 @@ https://templatemo.com/tm-516-known
   .social-icon li a {
     border-radius: 100px;
     color: #265D93;
-    font-size: 15px;
+    font-size: 24px;
     width: 35px;
     height: 35px;
     line-height: 35px;
