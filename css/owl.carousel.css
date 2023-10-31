@@ -125,7 +125,7 @@
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
-	animation-duration: 2000ms;
+	animation-duration: 5000ms;
 	animation-fill-mode: both;
 }
 
