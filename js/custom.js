@@ -1,88 +1,47 @@
-(function ($) {
 
-  "use strict";
+// GOOGLE MAP
+var map = '';
+var center;
 
-    // PRE LOADER
-    $(window).load(function(){
-      $('.preloader').fadeOut(1000); // set duration in brackets    
+function initialize() {
+    var mapOptions = {
+      zoom: 16,
+      center: new google.maps.LatLng(13.758468, 100.567481),
+      scrollwheel: false
+    };
+  
+    map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
+
+    google.maps.event.addDomListener(map, 'idle', function() {
+        calculateCenter();
+    });
+  
+    google.maps.event.addDomListener(window, 'resize', function() {
+        map.setCenter(center);
+    });
+}
+
+function calculateCenter() {
+  center = map.getCenter();
+}
+
+function loadGoogleMap(){
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+    document.body.appendChild(script);
+}
+
+$(function(){
+  loadGoogleMap();
+});
+
+// NIVO LIGHTBOX
+$('#portfolio a').nivoLightbox({
+        effect: 'fadeScale',
     });
 
-
-    // MENU
-    $('.navbar-collapse a').on('click',function(){
-      $(".navbar-collapse").collapse('hide');
+// HIDE MOBILE MENU AFTER CLIKING ON A LINK
+   $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
     });
-
-    $(window).scroll(function() {
-      if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-          } else {
-            $(".navbar-fixed-top").removeClass("top-nav-collapse");
-          }
-    });
-
-
-    // HOME SLIDER & COURSES & CLIENTS
-    $('.home-slider').owlCarousel({
-      animateOut: 'fadeOut',
-      items:1,
-      loop:true,
-      dots:false,
-      autoplayHoverPause: false,
-      autoplay: true,
-      smartSpeed: 1000,
-    })
-
-    $('.owl-courses').owlCarousel({
-      animateOut: 'fadeOut',
-      loop: true,
-      autoplayHoverPause: false,
-      autoplay: true,
-      smartSpeed: 1000,
-      dots: false,
-      nav:true,
-      navText: [
-          '<i class="fa fa-angle-left"></i>',
-          '<i class="fa fa-angle-right"></i>'
-      ],
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        1000: {
-          items: 3,
-        }
-      }
-    });
-
-    $('.owl-client').owlCarousel({
-      animateOut: 'fadeOut',
-      loop: true,
-      autoplayHoverPause: false,
-      autoplay: true,
-      smartSpeed: 1000,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        1000: {
-          items: 3,
-        }
-      }
-    });
-
-
-    // SMOOTHSCROLL
-    $(function() {
-      $('.custom-navbar a, #home a').on('click', function(event) {
-        var $anchor = $(this);
-          $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
-          }, 1000);
-            event.preventDefault();
-      });
-    });  
-
-})(jQuery);
